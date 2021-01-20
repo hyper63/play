@@ -1,0 +1,16 @@
+services:
+- type: web
+  env: node
+  name: hyper63-play
+  disk:
+    name: hyper63-play-disk
+    mountPath: /data
+    sizeGB: 10
+  startCommand: yarn start
+  buildCommand: yarn
+  envVars:
+    - key: DATA
+      value: /data
+    - key: SECRET
+      generateValue: true
+  
