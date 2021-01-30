@@ -10,6 +10,7 @@
     "@hyper63/adapter-pouchdb": "^1.1.4",
     "@hyper63/app-express": "^1.0.5",
     "@hyper63/core": "^1.2.0",
+    "express": "^4.17.1",
     "express-jwt": "^6.0.0"
   },
   "scripts": {
