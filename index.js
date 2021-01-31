@@ -9,3 +9,4 @@ if (!process.env.SECRET) {
 const config = require('./hyper63.config.js')
 const app = require('@hyper63/core')(config)
 
+

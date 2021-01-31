@@ -4,6 +4,8 @@ const fs = require('@hyper63/adapter-fs')
 const minisearch = require('@hyper63/adapter-minisearch')
 const express = require('@hyper63/app-express')
 const jwt = require('./jwt')
+const static = require('./static')
+const send = require('./send')
 
 module.exports = {
   app: express,
@@ -13,5 +15,5 @@ module.exports = {
     { port: 'storage', plugins: [fs({dir: process.env.DATA})]},
     { port: 'search', plugins: [minisearch()]}
   ],
-  middleware: [jwt]
+  middleware: [jwt, static, send]
 }
