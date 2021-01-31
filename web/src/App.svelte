@@ -1,5 +1,24 @@
 <script>
-	export let name;
+	// result 1 == success, 0 == not submitted, -1 == error
+	const SUCCESS = 1, NOT_SUBMITTED = 0, ERROR = -1
+	export let email
+	$: result = NOT_SUBMITTED
+	const submit = () => 
+	  fetch('/client/access', { method: 'POST', 
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ email })
+		})
+		  .then(res => res.json())
+		  .then(res => {
+				if (res.ok) {
+					result = SUCCESS
+				} else {
+					result = ERROR
+				}
+			})
+		  .catch(e => {
+				 error = true
+			})
 </script>
 
 <main>
@@ -13,11 +32,12 @@
 
   <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
 	<h2 class="mt-3 text-center text-3xl font-extrabold text-gray-900">Get API Token</h2>
-	<form class="mt-4 space-y-6">
+	{#if result === NOT_SUBMITTED}
+	<form class="mt-4 space-y-6" on:submit|preventDefault={submit}>
 		<div class="">
 			<label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
 			<div class="mt-1">
-            <input id="email" name="email" type="email" autocomplete="email" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				<input bind:value={email} id="email" name="email" type="email" autocomplete="email" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
 			</div>
       <div class="mt-5">
 				<button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-yellow-500 bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
@@ -26,6 +46,11 @@
         </div>
 		</div>
 	</form>
+	{:else if result === SUCCESS}
+    <p>Check your email for your token!</p>
+	{:else if result === ERROR}
+		<p>There was an error processing your request</p>
+	{/if}
 	</div>
 	</div>
 	</div>
