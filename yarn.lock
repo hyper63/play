@@ -37,10 +37,10 @@
     ramda "^0.27.1"
     rimraf "^3.0.2"
 
-"@hyper63/app-express@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@hyper63/app-express/-/app-express-1.0.5.tgz#d8bcfda696fba2345a3eddeed6fa8639da557c80"
-  integrity sha512-yVl+eBgYLHEc7NcFA47EGFm4Fa6qUxqmhV+FZO1wNbCj/fpXL+cmFcYDx+C/q4c6Q2/xYsifShjrSOisfqQEKg==
+"@hyper63/app-express@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@hyper63/app-express/-/app-express-1.0.8.tgz#238596ca0e4633558d94da3cf9998fa708bc5421"
+  integrity sha512-Hu2Rv9OhxapWr1bSQk3tb1WHyx2VWZXbRnAvVPcSA2GW2euCijmxQklMLBh0t6rG7MJGSk5ON+ME+W+R4tSm/g==
   dependencies:
     cors "^2.8.5"
     express "^4.17.1"
