@@ -17,19 +17,19 @@
     crocks "^0.12.4"
     ramda "^0.27.1"
 
-"@hyper63/adapter-minisearch@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@hyper63/adapter-minisearch/-/adapter-minisearch-1.0.5.tgz#2c86a78770370d022c193ebe42f9999a0fe418e1"
-  integrity sha512-xI+Upbt0c7Slxsk/CqWoCJEG1/KGz2dyOw29lGJvsGnpaeZauW6HWRbBEVocNCtOJxp/ITY2wONXqO7++xGXGQ==
+"@hyper63/adapter-minisearch@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@hyper63/adapter-minisearch/-/adapter-minisearch-1.0.7.tgz#9bd7eaa5c26e6b2258703d055e9bcb4a4a99c92c"
+  integrity sha512-epmtHrcysHq10sE0+LVSwnwumeJldWCF6RivLMThAqAZQU20W2vcPMoDT7t3y3ddYSTYtCFvH5r8MHip0EvAuQ==
   dependencies:
     crocks "^0.12.4"
     minisearch "^3.0.2"
     ramda "^0.27.1"
 
 "@hyper63/adapter-pouchdb@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@hyper63/adapter-pouchdb/-/adapter-pouchdb-1.1.4.tgz#3f3b0e8206d2d5ce8fb4180812e86af4dd8c9ffb"
-  integrity sha512-9bBrO48XrJiJrGJpOlbqEoYuhuXNxEk2Yetr4vcnOfXz/TdOoO5ux4vSb4eTa0WYAm2aenWQulTRHM1aWHXuqA==
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@hyper63/adapter-pouchdb/-/adapter-pouchdb-1.1.5.tgz#d57be70da5a03f0dbfe1bf7f39728e2ff77e396b"
+  integrity sha512-DiCMlwZ9RD5ZktDal4boZ9OPXFwA5a7AB0F/zCnbZEql9bYVnbiRjy60nJR0F6IB//58poms3bd6mL0w3kr3tA==
   dependencies:
     mkdirp "^1.0.4"
     pouchdb "^7.2.2"
@@ -63,9 +63,9 @@
     ramda "^0.27.1"
 
 "@hyper63/port-cache@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@hyper63/port-cache/-/port-cache-1.0.0.tgz#71f7bb9d4b9abf085e7f77bc87333095acb9001d"
-  integrity sha512-FT3GlYLQ6Z3nb08nHvzAPg53oN3r3Khh+S4vf8shbGy5OOo7j4Pj0fW50nBUm/mqjZ8W11Dtz4elqoH5vdYIQw==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@hyper63/port-cache/-/port-cache-1.0.1.tgz#64eb322a9fe84b2e6905507ab6f516f439719ce5"
+  integrity sha512-rcNJZAalPSODBzxJVdVyDW7DHQPJn8hhYUfg0nF/KIIcAo9gDvW8QAs9x8bD59EFlohlQTioNbTei1ocyGTvGw==
   dependencies:
     zod "^2.0.0-beta.22"
 
