@@ -9,7 +9,7 @@
     "@hyper63/adapter-minisearch": "^1.0.7",
     "@hyper63/adapter-pouchdb": "^1.1.4",
     "@hyper63/app-express": "^1.0.8",
-    "@hyper63/core": "^1.2.3",
+    "@hyper63/core": "^1.2.4",
     "crocks": "^0.12.4",
     "express": "^4.17.1",
     "express-jwt": "^6.0.0",

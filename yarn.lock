@@ -48,10 +48,10 @@
     mime "^2.4.6"
     multer "^1.4.2"
 
-"@hyper63/core@^1.2.2", "@hyper63/core@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@hyper63/core/-/core-1.2.3.tgz#7d904d3793e8d25e80f4368480354ea34c4630d1"
-  integrity sha512-E0OQXbnAOZ5HMMqIun6TTzkVp5UDFOg3UgcsU6F4m4sU/fAWIMSlP6tJVHwoIaLPEZn/ChdXFdaAiJHNMQwjzg==
+"@hyper63/core@^1.2.2", "@hyper63/core@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@hyper63/core/-/core-1.2.4.tgz#a3598bb90a95b33d9a542f3fd19b5f83aa1e095e"
+  integrity sha512-4z24T3FIxCnaGuGY8mWZiFx7BXnU4vW4YuX1FagFJba6mwHOhf+AlKd8If67JekftTmk93ogfDbID1MU6KySyg==
   dependencies:
     "@hyper63/core" "^1.2.2"
     "@hyper63/port-cache" "^1.0.0"
