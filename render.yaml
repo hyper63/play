@@ -7,7 +7,7 @@ services:
     mountPath: /data
     sizeGB: 10
   startCommand: yarn start
-  buildCommand: yarn && cd web && yarn build
+  buildCommand: yarn && cd web && yarn && yarn build
   envVars:
     - key: DATA
       value: /data
