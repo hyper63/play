@@ -13,4 +13,11 @@ services:
       value: /data
     - key: SECRET
       generateValue: true
+    - key: ELASTIC_APM_SERVICE_NAME
+      value: hyper-playground
+    - key: ELASTIC_APM_SECRET_TOKEN
+      sync: false
+    - key: ELASTIC_APM_SERVICE_URL
+      value: https://hyper.apm.us-west-2.aws.found.io
+
   
